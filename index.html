@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Um são de beleza, que tem meta trazer a melhor forma de você, te atendendo em tudo que você precisa para isso. A final nos mudamos quando nos sentimos bem, e se tem algo que meche com a estima é nossa aparecencia. vaidade na medida certa é saude">
     <title>Jardiny Hall</title>
+    <link rel="shortcut icon" href="../jardiny-hall/Imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/telas-p.css">
     <link rel="stylesheet" href="estilos/telas-g.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,6 +17,7 @@
             <img id="lg" src="Imagens/logo-3.png" alt="logo">
             <h1 id="lt">Jardiny Hall</h1>
         </div>
+        <span id="burguer"  class="material-icons" onclick="clickMenu()">nav</span>
         <nav>
             <a class="link" href="">Agende um horario</a>
             <a class="link" href="">Tabela de preços</a>
@@ -81,5 +85,14 @@
         </ul>
         <p>Este site foi criado apenas para fins educativos, e as imagens são ilustração obtida pelo  <a href="https://www.pexels.com/pt-br/" target="_blank">Pexels</a> </p>
     </footer>
+    <script>
+        function clicknav() {
+            if (m1.style.display == 'block') {
+                m1.style.display = 'none'
+            } else {
+                m1.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

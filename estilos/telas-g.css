@@ -17,7 +17,7 @@
 }
 
 
-/* @media screen and (min-width:) { */
+@media screen and (min-width:1000px) { 
 
 /* telas grandes*/
 
@@ -67,8 +67,6 @@ header nav {
     font-size: 1.2em;
     color: var(--tom2);
     padding: 5px;
-
-
 }
 
 .link:hover {
@@ -214,4 +212,4 @@ footer .rs {
     border-radius: 50%;
     margin-right: 3px;
 }
-/* } */
+} 
