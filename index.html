@@ -17,12 +17,14 @@
             <img id="lg" src="Imagens/logo-3.png" alt="logo">
             <h1 id="lt">Jardiny Hall</h1>
         </div>
-        <span id="burguer"  class="material-icons" onclick="clickMenu()">nav</span>
-        <nav>
-            <a class="link" href="">Agende um horario</a>
-            <a class="link" href="">Tabela de preços</a>
-            <a class="link" href="">Saiba mais sobre nós</a>
-        </nav>
+        <span id="burguer"  class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="m1">
+            <div id="m2">
+                <a class="link" href="">Agende um horario</a>
+                <a class="link" href="">Tabela de preços</a>
+                <a class="link" href="">Saiba mais sobre nós</a>
+            </div>
+        </menu>
     </header>
     <main>
         <section id="giff">
@@ -33,17 +35,21 @@
                         <section class="destaque">
                             <div class="discri">
                                 <h2>Cabelo Masculino</h2>
-                                <p>Quer fircar lindo para se sentir bem vem com a gente, parece que o mundo se abre para um homem bonito. Temos os melhores cortes te esperando alem disso fasemos progreciva, coloração, o degrade ja é de lei, e oque você queser para atrair atenção por onde passar.</p>
+                                <p>Bora colocar o cabelo na regua porque sextou no capricho.
+                                   E não se esqueça "um home com a barba feita, não quer guerra com ninguem"
+                                </p>
                             </div>
                             <picture class="pic">
-                                <sorce class="imagem" media="(max-width:)" srcset="Imagens/Masculino-400.jpg" type="image/jpg">
+                                <sorce class="imagem" media="(min-width:768px)" srcset="Imagens/Masculino-400.jpg" type="image/jpg">
                                     <img class="imagem" src="Imagens/Masculino-700.jpg" alt=""></sorce>
                             </picture>
                         </section>
                         <section class="destaque">
                             <div class="discri">
                                 <h2>Manicure</h2>
-                                <p>A mao de uma mulher é a 2ª coisa a ser notada... quando vai comprimetar, quando vai passar algo, ou quando vai pegar algo entao por quê não ter as unhas bem feitas?</p>
+                                <p>
+                                    Tente sempre algo novo, nem que seja a cor do esmalte, afinal, a vida não é perfeita mas as suas unhas podem ser! 
+                                </p>
                             </div>
                             <picture class="pic">
                                 <source class="imagem" media="(max-width:)" srcset="Imagens/Manicure-400.jpg" type="image/jpg">
@@ -56,7 +62,7 @@
                         <section class="destaque">
                             <div class="discri">
                                 <h2>Cabelo Feminino</h2>
-                                <p>Mude seu cabelo sem medo usamos os mehores produtos para você não ter provblemas depois mude sem medo que faremos de um jeito que ate o marido vai notar, e se não for casada, não se preucupe as amigas vai morrer de inveja, entao se prepoare para passa o nosso contato</p>
+                                <p>Invista no seu cabelo, é a coroa que você nunca tira. Garantimos um tratamento digno de realeza!</p>
                             </div>
                             <picture class="pic">
                                 <source class="imagem" media="(max-width:)" srcset="Imagens/Feminino-400.jpg" type="image/jpg">
@@ -65,8 +71,12 @@
                         </section>
                         <section class="destaque">
                             <div class="discri">
-                                <h2 id="tesp">Produção para Eventos Especiais</h2>
-                                <p>Casamento seu ou da amiga, evento da empresa, ou ate para ir em uma festa aleatoria, quer ser o centro das atenções em vem com a gente que aque vo^ce vai ter um dia de rainha, depilação, unha lipesa de pele e o cabelo. garanto que nada vai passar batido.</p>
+                                <h2 id="tesp">Combo</h2>
+                                <p>
+                                    Pede o <strong>combo</strong> e vire uma <strong>Kardashian</strong> <br>
+                                    <hr>
+                                    (o combo é composto por cabelo, unhas, depilação, makiagem e silicone... kkk brincadeirinha silicone não incluso.)
+                                </p>
                             </div>
                             <picture class="pic">
                                 <source class="imagem" media="(max-width:)" srcset="Imagens/Especial-400.jpg" type="image/jpg">
@@ -86,7 +96,7 @@
         <p>Este site foi criado apenas para fins educativos, e as imagens são ilustração obtida pelo  <a href="https://www.pexels.com/pt-br/" target="_blank">Pexels</a> </p>
     </footer>
     <script>
-        function clicknav() {
+        function clickMenu() {
             if (m1.style.display == 'block') {
                 m1.style.display = 'none'
             } else {
