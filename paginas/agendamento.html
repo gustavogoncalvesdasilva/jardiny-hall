@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/hedder.ccs">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap');
+
+*{ padding: 0; margin: 0; text-decoration: none; }
+
+::-webkit-scrollbar{width: 0; height: 0;}
+
+:root {
+    --font1:'Sirin Stencil', 'cursive';
+
+    --branco:white;
+    --tom1:#EFDF00;
+    --tom2:#E0A510;
+    --tom3:#614009;
+    --preto:black;
+}
+
+
+@media screen and (min-width:600px) { 
+
+/* telas grandes*/
+
+body {background:var(--preto); }
+
+/*cabeçalheo*/
+
+header {background-image:linear-gradient(to top, var(--preto), transparent) ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 0.1px solid var(--tom3);
+    position: sticky;
+    top:-1px;
+}
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+#lg {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+#lt {
+    color: var(--tom2);
+    font: 3em var(--font1);
+    padding-left: 10px;
+}
+
+#m1 {display: block;}
+
+#m2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    padding: 10px; 
+}
+
+#burguer { display: none;} 
+
+#age{order: 3;} #val{order: 2;} #sob{order: 1;}
+
+.link {
+    font-family: var(--font1);
+    font-size: 1.2em;
+    color: var(--tom2);
+    padding: 5px;
+}
+
+.link:hover {
+    border-radius: 10px;
+    box-shadow: 0px 2px 1px rgba(255, 255, 255, 0.5);
+    transform: translate(0px, -1.5px);
+}
+}@media screen and (max-width:600px) {
+
+/* telas grandes*/
+
+body {background:var(--branco); }
+
+/*cabeçalheo*/
+
+header {background-image:linear-gradient(to top, var(--branco), transparent) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+
+    padding: 10px;
+    border-bottom: 0.1px solid var(--tom3);
+    position: sticky;
+    top:-1px;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+#lg {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+#lt {
+    color: var(--tom3);
+    font: 2.5em var(--font1);
+    padding-left: 10px;
+}
+
+header #m1 {
+    display: none;
+}
+
+#m2 { 
+    background-image: linear-gradient(to top, var(--branco) 50%, transparent);
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    /* position: absolute;
+    left: 30%; */
+
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img id="lg" src="Imagens/logo-3.png" alt="logo">
+            <h1 id="lt">Jardiny Hall</h1>
+        </div>
+        <span id="burguer"  class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="m1">
+            <div id="m2">
+                <a id="age" class="link" href="">Agendamento</a>
+                <a id="val" class="link" href="">Preços</a>
+                <a id="sob" class="link" href="">Sobre nós</a>
+            </div>
+        </menu>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>    
+    <script>
+        function clickMenu() {
+            if (m1.style.display == 'block') {
+                m1.style.display = 'none'
+            } else {
+                m1.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

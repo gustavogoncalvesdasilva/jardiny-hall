@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+    
 @import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap');
 
 *{ padding: 0; margin: 0; text-decoration: none; }
@@ -15,5 +15,3 @@
     --tom3:#614009;
     --preto:black;
 }
-
-
