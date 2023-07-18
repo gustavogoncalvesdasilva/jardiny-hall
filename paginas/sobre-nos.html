@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades</title>
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/all.css">
+    <link rel="stylesheet" href="../estilos/header.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img id="lg" src="../Imagens/logo-3.png" alt="logo">
+            <h1 id="lt">Jardiny Hall</h1>
+        </div>
+        <span id="burguer"  class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="m1">
+            <div id="m2">
+                <a id="age" class="link" href="agendamento.html">Agendamento</a>
+                <a id="val" class="link" href="precos.html">Preços</a>
+                <a id="sob" class="link" href="sobre-nos.html">Sobre nós</a>
+                <a id="inic" class="link" href="../index.html">Pagina inicial</a>
+            </div>
+        </menu>
+    </header>
+
+    <main>
+        <nav>produtos / equipe </nav>
+        <h1>Historia do Jardiny Hall</h1>       
+        <p>historia</p>
+        <nav>produtos / equipe </nav>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#"><img class="rs" src="../Imagens/logo-facebook.jpg" alt="pagina do facebook">JardinyHall (oficial)</a></li>
+            <li><a href="#"><img class="rs" src="../Imagens/logo-instagram.jpg" alt="pagina do intagam">Jardiny_Hall</a></li>
+            <li><a href="#">Localizão</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+        </ul>
+        <p>Este site foi criado apenas para fins educativos, e as imagens são ilustração obtida pelo  <a href="https://www.pexels.com/pt-br/" target="_blank">Pexels</a> </p>
+    </footer>
+    
+    <script>
+        function clickMenu() {
+            if (m1.style.display == 'block') {
+                m1.style.display = 'none'
+            } else {
+                m1.style.display = 'block'
+            }
+        }
+    </script>
+    
+</body>
+</html>

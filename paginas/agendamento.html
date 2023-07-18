@@ -5,153 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento</title>
     <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../estilos/hedder.ccs">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/all.css">
+    <link rel="stylesheet" href="../estilos/header.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap');
-
-*{ padding: 0; margin: 0; text-decoration: none; }
-
-::-webkit-scrollbar{width: 0; height: 0;}
-
-:root {
-    --font1:'Sirin Stencil', 'cursive';
-
-    --branco:white;
-    --tom1:#EFDF00;
-    --tom2:#E0A510;
-    --tom3:#614009;
-    --preto:black;
-}
-
-
-@media screen and (min-width:600px) { 
-
-/* telas grandes*/
-
-body {background:var(--preto); }
-
-/*cabeçalheo*/
-
-header {background-image:linear-gradient(to top, var(--preto), transparent) ;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-    border-bottom: 0.1px solid var(--tom3);
-    position: sticky;
-    top:-1px;
-}
-#logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-}
-
-#lg {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-}
-
-#lt {
-    color: var(--tom2);
-    font: 3em var(--font1);
-    padding-left: 10px;
-}
-
-#m1 {display: block;}
-
-#m2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:20px;
-    padding: 10px; 
-}
-
-#burguer { display: none;} 
-
-#age{order: 3;} #val{order: 2;} #sob{order: 1;}
-
-.link {
-    font-family: var(--font1);
-    font-size: 1.2em;
-    color: var(--tom2);
-    padding: 5px;
-}
-
-.link:hover {
-    border-radius: 10px;
-    box-shadow: 0px 2px 1px rgba(255, 255, 255, 0.5);
-    transform: translate(0px, -1.5px);
-}
-}@media screen and (max-width:600px) {
-
-/* telas grandes*/
-
-body {background:var(--branco); }
-
-/*cabeçalheo*/
-
-header {background-image:linear-gradient(to top, var(--branco), transparent) ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-
-    padding: 10px;
-    border-bottom: 0.1px solid var(--tom3);
-    position: sticky;
-    top:-1px;
-}
-
-#logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-}
-
-#lg {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-}
-
-#lt {
-    color: var(--tom3);
-    font: 2.5em var(--font1);
-    padding-left: 10px;
-}
-
-header #m1 {
-    display: none;
-}
-
-#m2 { 
-    background-image: linear-gradient(to top, var(--branco) 50%, transparent);
-    width: 200px;
-
-    display: flex;
-    flex-direction: column;
-
-    text-align: center;
-
-    /* position: absolute;
-    left: 30%; */
-
-}
-
+        body{background-color: aliceblue;}
     </style>
 </head>
 <body>
     <header>
         <div id="logo">
-            <img id="lg" src="Imagens/logo-3.png" alt="logo">
+            <img id="lg" src="../Imagens/logo-3.png" alt="logo">
             <h1 id="lt">Jardiny Hall</h1>
         </div>
         <span id="burguer"  class="material-icons" onclick="clickMenu()">menu</span>
@@ -160,17 +26,102 @@ header #m1 {
                 <a id="age" class="link" href="">Agendamento</a>
                 <a id="val" class="link" href="">Preços</a>
                 <a id="sob" class="link" href="">Sobre nós</a>
+                <a id="inic" class="link" href="../index.html">Pagina inicial</a>
             </div>
         </menu>
     </header>
 
     <main>
+        <h1>Agende um Horario</h1>
+        <form action="" method="post" autocomplete="on" >
+            <div>
+                <fieldset>
+                    <legend>Cliente</legend>
+                    <label for="inome"> Nome completo</label>
+                    <input type="text" name="nome" id="inome" required autocomplete="additional-name" >
+                </fieldset>
+            </div>
 
+            <div>
+                <fieldset>
+                    <legend>Contato</legend>
+                    <label for="itel">Whatsapp</label>
+                    <input type="tel" name="tel" id="itel" max="12" min="12" placeholder="(xx)x-xxxx-xxxx">
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Agendamento</legend>
+                    <label for="ihora">Data e Horario</label>
+                    <input type="datetime-local" required>
+                </fieldset>
+            </div>
+
+            <div>
+            <fieldset>
+                <legend>Cabelo</legend>
+                <label for="iprof">Proficional Cabeleriro(a)</label>
+                <select name="prof" id="iprof">
+                    <option value="">--Proficinal--</option>
+                    <optgroup>
+                        <option value="Mar">Marcos</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Manicure</legend>
+                    <input type="radio" name="mani" id="sim" value="sm">
+                    <label for="s">Sim</label>
+                    <input type="radio" name="mani" id="nm" value="n">
+                    <label for="n">Não</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Depilação</legend>
+                    <input type="radio" name="Depi" id="sim" value="s">
+                    <label for="sp">Sim</label>
+                    <input type="radio" name="Depi" id="n" value="np">
+                    <label for="n">Não</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Maquiagem</legend>
+                    <input type="radio" name="maqui" id="sim" value="smq">
+                    <label for="s">Sim</label>
+                    <input type="radio" name="maqui" id="n" value="nmq">
+                    <label for="n">Não</label>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Especificações</legend>
+                    <label for="ifazer"> O que quer fazer exatamente...</label>
+                    <textarea name="msg" id="imsg" cols="100" rows="5" placeholder="esplique o que você gostaria de fazer..."></textarea>
+                </fieldset>
+            </div>
+
+            <div> enviar</div>
+        </form>
     </main>
 
+    
     <footer>
-
-    </footer>    
+        <ul>
+            <li><a href="#"><img class="rs" src="../Imagens/logo-facebook.jpg" alt="pagina do facebook">JardinyHall (oficial)</a></li>
+            <li><a href="#"><img class="rs" src="../Imagens/logo-instagram.jpg" alt="pagina do intagam">Jardiny_Hall</a></li>
+            <li><a href="#">Localizão</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+        </ul>
+        <p>Este site foi criado apenas para fins educativos, e as imagens são ilustração obtida pelo  <a href="https://www.pexels.com/pt-br/" target="_blank">Pexels</a> </p>
+    </footer>
+    
     <script>
         function clickMenu() {
             if (m1.style.display == 'block') {
