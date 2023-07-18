@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +9,8 @@
     rel="stylesheet">
     <link rel="stylesheet" href="../estilos/all.css">
     <link rel="stylesheet" href="../estilos/header.css">
+    <link rel="stylesheet" href="../estilos/agendamento.css">
     <link rel="stylesheet" href="../estilos/footer.css">
-    <style>
-        body{background-color: aliceblue;}
-    </style>
 </head>
 <body>
     <header>
@@ -23,9 +21,8 @@
         <span id="burguer"  class="material-icons" onclick="clickMenu()">menu</span>
         <menu id="m1">
             <div id="m2">
-                <a id="age" class="link" href="">Agendamento</a>
-                <a id="val" class="link" href="">Preços</a>
-                <a id="sob" class="link" href="">Sobre nós</a>
+                <a id="val" class="link" href="precos.html">Preços</a>
+                <a id="sob" class="link" href="sobre-nos.html">Sobre nós</a>
                 <a id="inic" class="link" href="../index.html">Pagina inicial</a>
             </div>
         </menu>
@@ -34,33 +31,33 @@
     <main>
         <h1>Agende um Horario</h1>
         <form action="" method="post" autocomplete="on" >
-            <div>
-                <fieldset>
-                    <legend>Cliente</legend>
+            <div class="cx">
+                <fieldset class="sub-cx">
+                    <legend class="titu">Cliente</legend>
                     <label for="inome"> Nome completo</label>
                     <input type="text" name="nome" id="inome" required autocomplete="additional-name" >
                 </fieldset>
             </div>
 
-            <div>
-                <fieldset>
-                    <legend>Contato</legend>
+            <div class="cx">
+                <fieldset class="sub-cx">
+                    <legend class="titu">Contato</legend>
                     <label for="itel">Whatsapp</label>
                     <input type="tel" name="tel" id="itel" max="12" min="12" placeholder="(xx)x-xxxx-xxxx">
                 </fieldset>
             </div>
 
-            <div>
-                <fieldset>
-                    <legend>Agendamento</legend>
+            <div class="cx">
+                <fieldset class="sub-cx">
+                    <legend class="titu">Agendamento</legend>
                     <label for="ihora">Data e Horario</label>
                     <input type="datetime-local" required>
                 </fieldset>
             </div>
 
-            <div>
-            <fieldset>
-                <legend>Cabelo</legend>
+            <div class="cx">
+            <fieldset class="sub-cx">
+                <legend class="titu">Cabelo</legend>
                 <label for="iprof">Proficional Cabeleriro(a)</label>
                 <select name="prof" id="iprof">
                     <option value="">--Proficinal--</option>
@@ -73,24 +70,25 @@
             </fieldset>
             </div>
 
-            <div>
-                <fieldset>
-                    <legend>Manicure</legend>
+            <div id="sn" class="cx">
+                <fieldset class="sub-cx">
+                    <legend class="titu">Manicure</legend>
                     <input type="radio" name="mani" id="sim" value="sm">
                     <label for="s">Sim</label>
                     <input type="radio" name="mani" id="nm" value="n">
                     <label for="n">Não</label>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Depilação</legend>
+                <fieldset class="sub-cx">
+                    <legend class="titu">Depilação</legend>
                     <input type="radio" name="Depi" id="sim" value="s">
                     <label for="sp">Sim</label>
                     <input type="radio" name="Depi" id="n" value="np">
                     <label for="n">Não</label>
                 </fieldset>
-                <fieldset>
-                    <legend>Maquiagem</legend>
+
+                <fieldset class="sub-cx">
+                    <legend class="titu">Maquiagem</legend>
                     <input type="radio" name="maqui" id="sim" value="smq">
                     <label for="s">Sim</label>
                     <input type="radio" name="maqui" id="n" value="nmq">
@@ -98,15 +96,17 @@
                 </fieldset>
             </div>
 
-            <div>
-                <fieldset>
-                    <legend>Especificações</legend>
+            <div id="esp" class="cx">
+                <fieldset class="sub-cx">
+                    <legend class="titu">Especificações</legend>
                     <label for="ifazer"> O que quer fazer exatamente...</label>
                     <textarea name="msg" id="imsg" cols="100" rows="5" placeholder="esplique o que você gostaria de fazer..."></textarea>
                 </fieldset>
             </div>
 
-            <div> enviar</div>
+            <div>
+                <button>Finalizar</button>
+            </div>
         </form>
     </main>
 

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+
+
+main{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main h1 { 
+    font-family: var(--font1);
+    color: var(--tom3);
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main .cx{
+    width: 400px;
+}
+
+main .sub-cx {
+    padding: 10px;
+    border-radius:0px 15px;
+    box-shadow: 0px 3px 7px #e0a5108c;
+}
+
+main .titu{
+    padding: 5px;
+    font-size: 1.2em;
+    font-family: var(--font1);
+    color: var(--tom3);
+}
+
+#sn {
+    display: flex;
+    wrap: nowrap;
+    gap: 10px;
+}
+
+#esp{
+    width: 400px;
+}
+
+#imsg {width: 350px; 
+padding: 5px;}
+
+button{ 
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 0px 10px;
+    box-shadow: 0px 3px 7px #e0a5108c;
+
+    font-family: var(--font1);
+    font-size: 1.3em;
+    color: var(--tom3);
+    
+}
