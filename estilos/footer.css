@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:722px) {
 
     /*Telas Pequenas*/
     
@@ -48,7 +48,7 @@
     
 }
 
-@media screen and (min-width:600px) { 
+@media screen and (min-width:722px) { 
 
     /*Telas Grandes*/
     

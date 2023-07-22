@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:722px) {
     /* Telas pequenas*/
         
     header {background-image:linear-gradient(to top, var(--branco), transparent) ;
@@ -76,7 +76,7 @@
     }
 }
 
-@media screen and (min-width:600px) { 
+@media screen and (min-width:722px) { 
 
     /* telas grandes*/
     
