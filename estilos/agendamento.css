@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-
+@media screen and (max-width: 722px) {
+    /* Telas Pequenas */
 
 main{ 
     display: flex;
@@ -44,6 +45,11 @@ main .titu{
     gap: 10px;
 }
 
+.sub-cx {
+    display: flex;
+    wrap:nowrap;
+}
+
 #esp{
     width: 400px;
 }
@@ -62,3 +68,100 @@ button{
     color: var(--tom3);
     
 }
+}
+
+@media screen and (min-width:722px) {
+ 
+    /* Telas Grandes */
+
+    input{border-radius: 5px;}
+
+    main{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+
+    main h1 { 
+        font-family: var(--font1);
+        color: var(--tom2);
+    }
+    
+    main form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    
+    main .cx{
+        width: 600px;
+        color: white;
+    }
+    
+    main .sub-cx {
+        padding: 10px;
+        border-radius:0px 15px;
+        box-shadow: 0px 3px 7px #e0a5108c;
+        
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+    }
+    
+    main .titu{
+        padding: 5px;
+        font-size: 1.2em;
+        font-family: var(--font1);
+        color: var(--tom2);
+    }
+    
+    #sn {
+        display: flex;
+        wrap: nowrap;
+        gap: 10px;
+    }
+    
+    #esp{
+        width: 600px;
+        display: block;
+        margin: auto;
+
+    }
+    #subesp{
+        padding: 10px;
+        padding-left: 20px;
+        border-radius:0px 15px;
+        box-shadow: 0px 3px 7px #e0a5108c;
+        color: white;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #imsg {width: 350px; 
+    padding: 5px;
+
+}
+    
+    button{ 
+        margin-top: 10px;
+        padding: 5px;
+        border-radius: 0px 10px;
+        box-shadow: 0px 3px 7px #e0a5108c;
+    
+        font-family: var(--font1);
+        font-size: 1.3em;
+        color: var(--tom2);
+        background-color: black;
+        
+    }
+    
+}
+
+
