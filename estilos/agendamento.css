@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 722px) {
     /* Telas Pequenas */
 
 main{ 
@@ -68,7 +67,7 @@ button{
     color: var(--tom3);
     
 }
-}
+
 
 @media screen and (min-width:722px) {
  

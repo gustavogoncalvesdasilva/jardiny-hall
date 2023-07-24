@@ -1,16 +1,23 @@
 @charset "UTF-8";
-@media screen and(max-width:722px) {
+
+@media screen and (max-width:722px) {
     
 main{
     width: 400px;
     margin: auto;
+    
+    
 }
 main h1 {
     text-align: center;
     font-family: var(--font1);
     font-size: 1.3em ;
     color: var(--tom3);
-    margin: 20px;
+    margin: 10px;
+    padding-top: 10px;
+    border-radius: 10px 0px 0px 0px;
+    border-left: 0.4px solid var(--tom3);
+    border-top: 0.4px solid var(--tom3);
 }
 
 main p {
@@ -18,8 +25,20 @@ main p {
     line-height: 1.5em;
     text-indent: 20px;
     font: arial 1.5em;
-    margin: 20px;
+    margin: 10px;
+    padding: 10px;
+    
  } 
+
+ #princ {border-left: 0.4px solid var(--tom3);}
+
+ .comple{border-right: 0.4px solid var(--tom3);}
+
+ #fim{border-bottom: 0.4px solid var(--tom3);
+    border-radius: 0px 0px 10px 0px;
+}
+
+
 
  main nav {
     margin: 10px;
