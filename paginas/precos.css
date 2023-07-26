@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+main {
+    margin: auto;
+    width: 450px;
+    padding: 10px;
+    border: 5px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+h1{
+    text-align: center;
+    font-family: var(--font1);
+    color: var(--tom3);
+}
+
+table{
+    padding: 10px;
+    text-align: center;   
+}
+
+caption{}
+
+thead{}
+
+tbody{}
+
+tr{ 
+padding: 5px;
+border: 0.4px solid var(--tom3);
+}
+
+th{}
+td{}
+.val{}
